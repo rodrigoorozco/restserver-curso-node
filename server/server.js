@@ -9,10 +9,11 @@ const app = express();
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(require('./routes/usuario'))
 
+//Call routes
+app.use(require('./routes/index'));
 
-mongoose.connect(process.env.URLDB,{useNewUrlParser: true, useUnifiedTopology: true}, (err, res) => {
+mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => {
     if (err) throw err;
 
     console.log(`Base de datos Online`);
@@ -22,5 +23,5 @@ mongoose.connect(process.env.URLDB,{useNewUrlParser: true, useUnifiedTopology: t
 
 
 app.listen(process.env.PORT, () => {
-    console.log(`Escuchando el puerto 3000`);
+    console.log(`Escuchando el puerto ${process.env.PORT}`);
 })
