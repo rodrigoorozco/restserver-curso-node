@@ -24,6 +24,10 @@ SEED DE AUTENTICACION
 ========*/
 process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
 
+/* ======== 
+GOOGLE CLIENT ID
+========*/
+process.env.CLIENT_ID = process.env.CLIENT_ID || '219347723222-7svg053jrph5d9nig2umfdois5r0ou94.apps.googleusercontent.com';
 
 
 /* ======== 
