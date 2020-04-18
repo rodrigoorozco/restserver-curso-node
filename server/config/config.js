@@ -27,7 +27,7 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
 /* ======== 
 GOOGLE CLIENT ID
 ========*/
-process.env.CLIENT_ID = process.env.CLIENT_ID || '219347723222-7svg053jrph5d9nig2umfdois5r0ou94.apps.googleusercontent.com';
+process.env.CLIENT_ID = process.env.CLIENT_ID || '219347723222-domvvfvsu8uk4falkqi3ki8i4vmn4d0p.apps.googleusercontent.com';
 
 
 /* ======== 
